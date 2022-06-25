@@ -1,3 +1,4 @@
-backend.tf
-/*.tf
-README.ms
+
+.terraform
+README.md
+
