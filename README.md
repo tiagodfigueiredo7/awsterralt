@@ -1,42 +1,72 @@
-# ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) Semana Spring React - 9 a 15 de Maio
->  *Crie um app completo para seu portfólio com as tecnologias mais demandadas do mercado*
+# Projeto - Terraform ~ Docker   
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/tiagodfigueiredo7/awsterralt/blob/main/LICENCE) 
 
-## Realização
-[DevSuperior - Escola de programação](https://devsuperior.com.br)
+# Sobre o projeto
 
-[![DevSuperior no Instagram](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/ig-icon.png)](https://instagram.com/devsuperior.ig)
-[![DevSuperior no Youtube](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/yt-icon.png)](https://youtube.com/devsuperior)
+Nesse Proejeto a ideia é subir um servidor Ec2 na Aws com Docker, subir um Container com a imagem do Terraform. 
+Após o ambiente todo pronto, vamos aplicar: 
 
-## Página de inscrição do evento
-- [Página de inscrição - Semana Spring React](https://devsuperior.com.br/sds-inscricao-org)
+#  Infra Cloud
 
-## Guias de instalação das ferramentas
-- [Guia de instalação das ferramentas no Windows](https://github.com/devsuperior/sds-dsmovie/tree/main/_instalacao/windows)
-- [Guia de instalação das ferramentas no Linux](https://github.com/devsuperior/sds-dsmovie/tree/main/_instalacao/linux)
-- [Guia de instalação das ferramentas no Mac](https://github.com/devsuperior/sds-dsmovie/tree/main/_instalacao/mac)
-
-## Discord do evento para dúvidas e networking
-- [Discord da Semana Spring React](https://discord.gg/sjm6AqWxz2)
+- VPC
+- SUBNET
+- IAM
+- E2
+- S3
 
 
-## Conteúdos de preparação
 
-### 1) Git e Github para iniciantes
+##  Projeto 
 
-[![Image](https://img.youtube.com/vi/_hZf1teRFNg/mqdefault.jpg "Vídeo no Youtube")](https://youtu.be/_hZf1teRFNg)
+![Web 1](https://github.com/tiagodfigueiredo7/assets/blob/main/WhatsApp%20Image%202022-06-25%20at%2019.05.18.jpeg)
 
-### 2) Super revisão de OO e SQL
 
-[![Image](https://img.youtube.com/vi/xC_yKw3MYX4/mqdefault.jpg "Vídeo no Youtube")](https://youtu.be/xC_yKw3MYX4)
 
-### 3) Seu primeiro projeto Java web no Spring Boot
+# Tecnologias utilizadas
 
-[![Image](https://img.youtube.com/vi/D4frmIHAxEY/mqdefault.jpg "Vídeo no Youtube")](https://youtu.be/D4frmIHAxEY)
+- Aws 
+- Terraform 
+- Docker
+- GitHub
 
-### 4) JpaRepository: interface boladona do Spring
+# Como executar o projeto
 
-[![Image](https://img.youtube.com/vi/jh_T5_o3qKE/mqdefault.jpg "Vídeo no Youtube")](https://youtu.be/jh_T5_o3qKE)
+## 1 Parte
+Pré-requisitos: Conta AWS
 
-### 5) ReactJS primeiros passos - Introdução Prática
 
-[![Image](https://img.youtube.com/vi/IOJoJGDowEY/mqdefault.jpg "Vídeo no Youtube")](https://youtu.be/IOJoJGDowEY)
+
+## 2 parte
+Pré-requisitos: npm / yarn
+
+```bash
+# Configurar GitHub
+
+
+# instalação Terraform
+
+```
+
+# Instalação  Docker ( Linux )
+
+https://docs.docker.com/desktop/linux/install/
+
+```
+sudo apt remove docker-desktop
+sudo apt-get update
+sudo curl -fsSL https://get.docker.com -o get-docker.sh
+sudo apt-get update
+
+$ sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+```
+
+# Autor
+
+Tiago Domingos Figueiredo
+
+https://www.linkedin.com/in/tiagodfigueiredo/
