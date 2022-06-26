@@ -103,6 +103,6 @@ sudo apt-get update && sudo apt-get install terraform
 
 # Autor
 
-Tiago Domingos Figueiredo - DevOps
+Tiago Domingos Figueiredo 
 
 https://www.linkedin.com/in/tiagodfigueiredo/
