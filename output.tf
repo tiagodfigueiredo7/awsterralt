@@ -1,3 +1,6 @@
-output "dns_name" {
-  value = aws_instance.web.public_dns
+output "ip_adress" {                                 # nessa linha queremos mostrar na tela o IP
+  value = aws_instance.Terraform-TL.public_ip        # nessa linha estamos apontando  para o recurso e o nome do nosso Ec2 
 }
+
+
+# 
