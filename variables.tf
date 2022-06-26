@@ -3,3 +3,17 @@ variable "image_id" {
   type = string
   description = "essa variavel é um ID de imagem que sera usado no servidor Ec2."
 }
+
+
+variable "key" {
+    default = "terraform-aws"
+
+}
+
+
+
+variable "servidores" {
+    type    = number
+    default = 2
+
+}
