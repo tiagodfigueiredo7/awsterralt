@@ -55,7 +55,7 @@ $ sudo apt-get install \
     gnupg \
     lsb-release
 ```
-#outras configurações  Docker
+# Comando para que o Docker sempre utilize a versão mais atualizada
 
 ```
 echo \
