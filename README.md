@@ -106,3 +106,5 @@ sudo apt-get update && sudo apt-get install terraform
 Tiago Domingos Figueiredo 
 
 https://www.linkedin.com/in/tiagodfigueiredo/
+
+https://github.com/tiagodfigueiredo7/assets/blob/main/t.jpg
