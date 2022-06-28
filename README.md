@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Nesse Proejeto a ideia é subir um servidor Ec2 na Aws com Docker, subir um Container com a imagem do Terraform. 
+Nesse Proejeto usamos um servidor Ec2 na Aws com Docker, um Container com a imagem do Terraform. 
 Após o ambiente todo pronto, vamos aplicar: 
 
 #  Infra Cloud
