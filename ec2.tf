@@ -5,7 +5,7 @@ resource "aws_instance" "TerraformLT" {
   count         = var.servidores
 
   tags = {
-    Name = "TerraformLT"
+    Name = "TerraformLT${count.index}"
   }
 }
   

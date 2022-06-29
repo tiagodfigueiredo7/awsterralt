@@ -1,3 +1,3 @@
 provider "aws" {
-  region  = "us-east-2"
+  region  = count = "${terraform.workspace == "production" ? "us-east-2" : "us-east-1"}"
 }

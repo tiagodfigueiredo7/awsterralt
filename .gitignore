@@ -1,5 +1,6 @@
-
+output.tf
+dynamobdb.tf
 .terraform
 README.md
-output.tf
+output.txt
 
