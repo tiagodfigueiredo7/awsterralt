@@ -1,0 +1,7 @@
+1- ao usar o o workspace para o prodider : "${terraform.workspace == "default" ? "us-east-2" : "us-east-1"}"  preciso testar o comando
+para subir independente da imagem, pra que seja gerado, e nao fique atrelado a uma imagem da região
+
+2- output deixou de funcionar corretamente para trazer o public_ip qdo usando o count para gerar numeros de instancias ec2
+
+3- problema com .gitignore não funcionando com alguns arquivos. ex:  dynamodb ,entre outros casos
+
