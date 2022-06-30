@@ -1,3 +1,3 @@
 output "ids"{
-value=aws_instance.TerraformLT.*.public_ip
+value = aws_instance.TerraformLT.*.public_ip
 }

@@ -22,4 +22,9 @@ resource "aws_instance" "TerraformLT" {
     subnet_id                    = data.aws_subnet.subnetaula.id 
 
 }
-    
+
+resource "aws_eip" "ip" {
+    vpc      = true
+    count    = var.servidores
+   
+}
