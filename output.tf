@@ -1,4 +1,3 @@
-
-output "ip_address" {
-  value = join("", aws_instance.TerraformLT[*].id)
+output "ids"{
+value=aws_instance.TerraformLT.*.public_ip
 }
