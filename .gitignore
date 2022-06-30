@@ -1,4 +1,4 @@
-output.tf
+
 dynamobdb.tf
 .terraform
 README.md
