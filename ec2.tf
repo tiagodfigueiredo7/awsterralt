@@ -25,6 +25,6 @@ resource "aws_instance" "TerraformLT" {
 
 resource "aws_eip" "ip" {
     vpc      = true
-    count    = var.servidores
+    count    = var.servidores  # distribuindo IP fixo Elastic IP ,  
    
 }
