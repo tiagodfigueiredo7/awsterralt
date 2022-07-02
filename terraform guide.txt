@@ -1,0 +1,9 @@
+terraform graph | dot -Tsvg > graph.svg    -->  gerador de grafo
+
+terraform workspace new "name"             --> cria um novo workspace
+terraform workspace list                   --> lista um workspace
+terraform workspace select                 --> seleciona um  workspace novo da lista 
+
+
+terraform state pull > "nome.tfstate       --> gera um novo arquivo do tfstate
+terraform state list                       --> vai listar o endereço dos recursos criados e modulos

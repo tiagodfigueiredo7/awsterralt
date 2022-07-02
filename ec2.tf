@@ -13,7 +13,7 @@ resource "aws_instance" "TerraformLT" {
   ami                         = data.aws_ami.ubuntu.id                              # apontando pro data de ami, para que seja obrigatorio o uso da ami ubuntu
   instance_type               = "t2.micro"                                          # tipo instancia Ec2. T2 micro
   key_name                    = var.key                                             # variable para a nossa chave de acesso via ssh
-  count                       = var.environment == "production" ? 1 + var.plus : 1  # o Valor da variavel var.environment é production ? se sim sobe 2 se nao sobe 1
+  count                       = var.environment == "production" ? 1 + var.plus : 1  # o Valor da variavel var.environment é production? se sim sobe2 se nao sobe1
   vpc_security_group_ids      = [aws_security_group.terrassh.id]                    # abrindo porta ssh no arq. security group
   associate_public_ip_address = "true"                                              # liberando ip publico
   subnet_id                    = data.aws_subnet.subnetaula.id                      # Criando Ec2 direcionando pra subnet correta de cada Vpc usando data.
@@ -25,8 +25,9 @@ resource "aws_instance" "TerraformLT" {
    }
 }
 
-resource "aws_eip" "ip-publico" {
-    vpc      = true
-    count    = var.servidores  # distribuindo IP fixo Elastic IP ,  
+resource "aws_eip" "ip-publico" {               #
+    vpc      = true                             #
+   #instance = aws_instance.TerraformLT.id      # essa linha nao funcionou pq ela só serve qdo subimos 1 unica Ec2, então usamos a linha a baixo
+    count    = var.servidores                   # distribuindo IP fixo Elastic IP , em varias instancias,  usando count + variable 
    
 }
