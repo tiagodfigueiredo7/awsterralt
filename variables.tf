@@ -29,14 +29,14 @@ variable "plus" {
 
 }
 
-variable "environment2" {
-    type        = string                          # string = string é uma sequência de caracteres, geralmente utilizada para representar palavras
-    default     = "staging"
-    description = "the environment of instance"
-}
-
-
 variable "terrassh" {
   type        = list(string)
   default     = []
  }
+
+ variable name {
+   type        = string
+   default     = "Server Terra"
+   description = "aprendendo e add interpolacao TerraformLT"
+ }
+ 

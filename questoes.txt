@@ -5,3 +5,6 @@ para subir independente da imagem, pra que seja gerado, e nao fique atrelado a u
 
 3- problema com .gitignore não funcionando com alguns arquivos. ex:  dynamodb ,entre outros casos
 
+4- = [aws_security_group.terrassh.id]  oq esse comando tem que ter  []
+
+5- = pq qdo usamos a tag para crianção do Ec2 , ou funciona count ou name e nao os dois juntos ao mesmo tempo? 

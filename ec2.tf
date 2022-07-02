@@ -10,20 +10,19 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "TerraformLT" {
-  ami                         = data.aws_ami.ubuntu.id
-  instance_type               = "t2.micro"
-  key_name                    = var.key
+  ami                         = data.aws_ami.ubuntu.id                              # apontando pro data de ami, para que seja obrigatorio o uso da ami ubuntu
+  instance_type               = "t2.micro"                                          # tipo instancia Ec2. T2 micro
+  key_name                    = var.key                                             # variable para a nossa chave de acesso via ssh
   count                       = var.environment == "production" ? 1 + var.plus : 1  # o Valor da variavel var.environment é production ? se sim sobe 2 se nao sobe 1
-  vpc_security_group_ids      = [aws_security_group.terrassh.id]
+  vpc_security_group_ids      = [aws_security_group.terrassh.id]                    # abrindo porta ssh no arq. security group
+  associate_public_ip_address = "true"                                              # liberando ip publico
+  subnet_id                    = data.aws_subnet.subnetaula.id                      # Criando Ec2 direcionando pra subnet correta de cada Vpc usando data.
  #vpc_security_group_ids      = ["data.aws_security_group.sg.*.id"]
 
   tags = {
-    Name        = "TerraformLT${count.index}"
-    Env         =  var.environment2
+    Name        = "TerraformLT ${count.index}"  #a aqui vamos colocar numeros na frente do Ec2
+   #Name        = "TerraformLT ${var.name}"     # aqui vamos usar um nome [ Server Terra, Interpolação] comando criado la no variables
    }
-    associate_public_ip_address = "true"
-    subnet_id                    = data.aws_subnet.subnetaula.id 
-
 }
 
 resource "aws_eip" "ip-publico" {
