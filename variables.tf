@@ -14,7 +14,7 @@ variable "key" {
 
 variable "servidores" {
     type    = number
-    default = 2
+    default = 1
 
 }
 
