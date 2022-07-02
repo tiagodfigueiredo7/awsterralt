@@ -19,3 +19,8 @@ variable "servidores" {
 }
 
 
+variable "environment" {                 # essa variavel muda a quantidade de maquinas que sobe de acordo com a conf do arquivo ec2.tf, 
+    default = "default"                        # se for production esta selecionado 2 pelo arquico ec2, qualquer outra coisa ex: default é 1 Ec2
+
+}
+

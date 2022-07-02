@@ -13,7 +13,7 @@ resource "aws_instance" "TerraformLT" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = "t2.micro"
   key_name                    = var.key
-  count                       = var.servidores
+  count                       = var.environment == "production" ? 2 : 1  # o Valor da variavel var.environment é production ? se sim sobe 2 se nao sobe 1
 
   tags = {
     Name = "TerraformLT${count.index}"
