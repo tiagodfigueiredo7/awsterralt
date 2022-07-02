@@ -24,8 +24,8 @@ variable "environment" {                        # essa variavel muda a quantidad
 
 }
 
-variable "plus" {                              # aqui é uma variable que soma um numer para adicionar mais Ec2's       
-    default = 1 
+variable "plus" {                              # aqui é uma variable que soma um numero para adicionar mais Ec2's       
+    default = 3 
 
 }
 

@@ -25,9 +25,9 @@ resource "aws_instance" "TerraformLT" {
    }
 }
 
-resource "aws_eip" "ip-publico" {               #
-    vpc      = true                             #
-   #instance = aws_instance.TerraformLT.id      # essa linha nao funcionou pq ela só serve qdo subimos 1 unica Ec2, então usamos a linha a baixo
-    count    = var.servidores                   # distribuindo IP fixo Elastic IP , em varias instancias,  usando count + variable 
-   
-}
+#resource "aws_eip" "ip-publico" {               #
+#    vpc      = true                             #
+#    instance = aws_instance.TerraformLT[count.index].id      # essa linha nao funcionou pq ela só serve qdo subimos 1 unica Ec2, 
+#   #count    = var.servidores                                # distribuindo IP fixo Elastic IP ,
+#  
+#
